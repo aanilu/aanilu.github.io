@@ -1,0 +1,56 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  /* Imagen de fondo que cubre todo el área visible */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+                    url("../secundariauno/imagenes/bosque2.jpg");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+
+  /* Configuración para permitir desplazamiento */
+  display: flex;
+  flex-direction: column; 
+  width: 100%; /* Asegura que el ancho ocupe todo el viewport */
+  min-height: 100vh; /* Asegura que el body tenga al menos el alto del viewport */
+  overflow-x: hidden; /* Evita el desplazamiento horizontal innecesario */
+}
+
+.wrap {
+  margin: 0 auto; /* Centra el wrap horizontalmente */
+  padding: 0;
+  max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
+  width: 100%; /* Ocupará el ancho máximo definido y se ajustará al viewport */
+  display: flex;
+  flex-direction: column; /* Cambiar a column para que el contenido fluya verticalmente */
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem; 
+  /* No establezcas altura fija aquí para permitir el desplazamiento */
+}
+
+/* Clase para la sección de música */
+.wrap-musica {
+  flex: 1; 
+  max-width: 600px; 
+  min-width: 300px;
+  margin-right: 3rem;
+}
+
+/* Clase para la sección de texto */
+.wrap-texto {
+  color: antiquewhite;
+  text-align: center;
+  flex: 1;
+  width: 100%;
+  padding: 2rem 3rem;
+  border: 3px solid #fff;
+  box-shadow: 0 0 25px #222;
+  backdrop-filter: blur(10px);
+}
+

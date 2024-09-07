@@ -1,0 +1,41 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+                url("../PRINCIPAL/imagenes/bosque1.jpg");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column; 
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; 
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.wrap-texto {
+  color: antiquewhite;
+  text-align: center;
+  padding: 2rem;
+  border: 3px solid #fff;
+  box-shadow: 0 0 25px #222;
+  backdrop-filter: blur(10px);
+  max-width: 100%;
+}
+
+footer {
+  color: #fff;
+}
